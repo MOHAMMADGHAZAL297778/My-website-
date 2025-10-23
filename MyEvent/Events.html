@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="MyEvent.css">
+    <!--Linking font awesome for icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--linking Swipper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"/>
+</head>
+<body>
+    <div class="all">
+        <header class="headnav">
+            <!--Header-->
+            <div class="logo">
+                <img src="Imgs/my-logo.png" alt="Logo">
+                <h2 class="logo-name">My Event</h2>
+            </div>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="mood">
+                <button id="darkModeToggle" class="dark-toggle">🌙</button>
+                <select id="language-selectar">
+                    <option value="ar">English</option>
+                    <option value="en">العربية</option>
+                </select>
+            </div>
+        </header>
+        <section>
+            <h2 class="section-title events-section" id="events">Events</h2>
+            <div class="container py-5 mt-5">
+                <!-- event 1  ==========================================  -->  
+                <div id="event-details-section" class="card shadow-lg p-4 mb-5 bg-body-tertiary rounded">
+                    <div class="row g-0">
+                        <div class="col-md-3 d-flex align-items-center justify-content-center">
+                            <img id="event-detail-img" src="Imgs/14567428_1213807811994273_119007985085151139_o.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h1 id="event-detail-title" class="card-title display-5 text-warning mb-3" data-en="event-title" data-ar="عنوان الفعالية " dir="auto" >Colors Festival</h1>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-calendar me-2 text-secondary"></i> <strong data-en="Date:" data-ar="التاريخ:"dir="auto">Date:</strong> <span id="event-detail-date">2025-10-16</span></p>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-location-plus me-2 text-secondary"></i> <strong data-en="Location:" data-ar="الموقع:"dir="auto">Location:</strong> <span id="event-detail-place" data-en="City Center" data-ar="مركز المدينة">دمشق _ ساحة الأمويين </span></p>
+                                <p class="card-text mb-3 fs-5"><i class="bx bx-tag me-2 text-secondary"></i> <strong data-en="Category:" data-ar="الفئة:" dir="auto">Category:</strong> <span id="event-detail-category" class="badge bg-warning" data-en="Category" data-ar="فئة">ترفيه</span></p>
+                                <p id="event-detail-longdesc" class="card-text fs-6 lead" data-en="A detailed description of the event will be displayed here, providing more information about what attendees can expect." data-ar="سيتم عرض وصف مفصل للفعالية هنا، ليقدم المزيد من المعلومات حول ما يمكن أن يتوقعه الحضور." dir="auto">يقام حفل غنائي و ترفيه صاخب يضم مجموعة من المطربين المعروفين   للاشتراك بامكانك ذلك عبر الرابط  كما يمكنك مشاركة الفعالية انضم الينا و استمتع باجمل الاوقات   </p>
+                                
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                    <button class="btn btn-warning btn-lg" type="button" data-en="Register Now" data-ar="سجل الآن">Register Now</button>
+                                    <button class="btn btn-outline-secondary btn-lg" type="button" data-en="Share Event" data-ar="مشاركة الفعالية">Share Event</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- event 2  ==========================================  -->  
+                <div id="event-details-section" class="card shadow-lg p-4 mb-5 bg-body-tertiary rounded">
+                    <div class="row g-0">
+                        <div class="col-md-3 d-flex align-items-center justify-content-center">
+                            <img id="event-detail-img" src="Imgs/channels4_profile.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h1 id="event-detail-title" class="card-title display-5 text-warning mb-3" data-en="event-title" data-ar="عنوان الفعالية " dir="auto" >Chess </h1>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-calendar me-2 text-secondary"></i> <strong data-en="Date:" data-ar="التاريخ:"dir="auto">Date:</strong> <span id="event-detail-date">2025-10-20</span></p>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-location-plus me-2 text-secondary"></i> <strong data-en="Location:" data-ar="الموقع:"dir="auto">Location:</strong> <span id="event-detail-place" data-en="City Center" data-ar="مركز المدينة">دمشق _ صالة الجلاء الرياضية  </span></p>
+                                <p class="card-text mb-3 fs-5"><i class="bx bx-tag me-2 text-secondary"></i> <strong data-en="Category:" data-ar="الفئة:" dir="auto">Category:</strong> <span id="event-detail-category" class="badge bg-warning" data-en="Category" data-ar="فئة">رياضة</span></p>
+                                <p id="event-detail-longdesc" class="card-text fs-6 lead" data-en="A detailed description of the event will be displayed here, providing more information about what attendees can expect." data-ar="سيتم عرض وصف مفصل للفعالية هنا، ليقدم المزيد من المعلومات حول ما يمكن أن يتوقعه الحضور." dir="auto">يقام في  مدينة دمشق منافسة ودية في لعبة الشطرنج في صالة الجلاء الرياضية تشمل جميع الاعمار : بادر الأن للانضمام للمسابقة و تحدى عقلك و استمتع بلعبة الملوك    </p>
+                                
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                    <button class="btn btn-warning btn-lg" type="button" data-en="Register Now" data-ar="سجل الآن">Register Now</button>
+                                    <button class="btn btn-outline-secondary btn-lg" type="button" data-en="Share Event" data-ar="مشاركة الفعالية">Share Event</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- event 3  ==========================================  -->  
+                <div id="event-details-section" class="card shadow-lg p-4 mb-5 bg-body-tertiary rounded">
+                    <div class="row g-0">
+                        <div class="col-md-3 d-flex align-items-center justify-content-center">
+                            <img id="event-detail-img" src="Imgs/syria-festival.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h1 id="event-detail-title" class="card-title display-5 text-warning mb-3" data-en="event-title" data-ar="عنوان الفعالية " dir="auto" >Arabic Music Night</h1>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-calendar me-2 text-secondary"></i> <strong data-en="Date:" data-ar="التاريخ:"dir="auto">Date:</strong> <span id="event-detail-date">2025-10-18</span></p>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-location-plus me-2 text-secondary"></i> <strong data-en="Location:" data-ar="الموقع:"dir="auto">Location:</strong> <span id="event-detail-place" data-en="City Center" data-ar="مركز المدينة">قلعة دمشق  </span></p>
+                                <p class="card-text mb-3 fs-5"><i class="bx bx-tag me-2 text-secondary"></i> <strong data-en="Category:" data-ar="الفئة:" dir="auto">Category:</strong> <span id="event-detail-category" class="badge bg-warning" data-en="Category" data-ar="فئة">ثقافة</span></p>
+                                <p id="event-detail-longdesc" class="card-text fs-6 lead" data-en="A detailed description of the event will be displayed here, providing more information about what attendees can expect." data-ar="سيتم عرض وصف مفصل للفعالية هنا، ليقدم المزيد من المعلومات حول ما يمكن أن يتوقعه الحضور." dir="auto">استمتع بأجمل اللحظات من خلال الشاركة في ليالي الموسيقى العربية في قلعة دمشق  ليلى طربية لا تنسى    </p>
+                                
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                    <button class="btn btn-warning btn-lg" type="button" data-en="Register Now" data-ar="سجل الآن">Register Now</button>
+                                    <button class="btn btn-outline-secondary btn-lg" type="button" data-en="Share Event" data-ar="مشاركة الفعالية">Share Event</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- event 4  ==========================================  -->  
+                <div id="event-details-section" class="card shadow-lg p-4 mb-5 bg-body-tertiary rounded">
+                    <div class="row g-0">
+                        <div class="col-md-3 d-flex align-items-center justify-content-center">
+                            <img id="event-detail-img" src="Imgs/IMG_20250904_235129_946.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="card-body">
+                                <h1 id="event-detail-title" class="card-title display-5 text-warning mb-3" data-en="event-title" data-ar="عنوان الفعالية " dir="auto" >Science Fairl</h1>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-calendar me-2 text-secondary"></i> <strong data-en="Date:" data-ar="التاريخ:"dir="auto">Date:</strong> <span id="event-detail-date">2025-10-22</span></p>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-location-plus me-2 text-secondary"></i> <strong data-en="Location:" data-ar="الموقع:"dir="auto">Location:</strong> <span id="event-detail-place" data-en="City Center" data-ar="مركز المدينة">دمشق -شارع الثورة -مدرسة دار الحكمة الخاصة  </span></p>
+                                <p class="card-text mb-3 fs-5"><i class="bx bx-tag me-2 text-secondary"></i> <strong data-en="Category:" data-ar="الفئة:" dir="auto">Category:</strong> <span id="event-detail-category" class="badge bg-warning" data-en="Category" data-ar="فئة">علوم</span></p>
+                                <p id="event-detail-longdesc" class="card-text fs-6 lead" data-en="A detailed description of the event will be displayed here, providing more information about what attendees can expect." data-ar="سيتم عرض وصف مفصل للفعالية هنا، ليقدم المزيد من المعلومات حول ما يمكن أن يتوقعه الحضور." dir="auto">تجارب علمية ممتعة و الدخول مجاني ك اكتشفوا جمال العلوم و سحرها من خلال المشاركة في فعالية يوم العلوم الذي يقام في مدرسة الحكمة و يشمل جميع الفئات العمرية   </p>
+                                
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                    <button class="btn btn-warning btn-lg" type="button" data-en="Register Now" data-ar="سجل الآن">Register Now</button>
+                                    <button class="btn btn-outline-secondary btn-lg" type="button" data-en="Share Event" data-ar="مشاركة الفعالية">Share Event</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- releted events   ==========================================  -->  
+                <div id="related-events-section" class="mt-5">
+                    <h2 class="section-title mb-4" data-en="Related Events" data-ar="فعاليات ذات صلة">Related Events</h2>
+                    <div class="row" id="related-events-container">
+                    
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="Imgs/flowers.jfif" class="card-img-top" alt="Related Event 1">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title" data-en="Flower Exhibition" data-ar="معرض الزهور">Flower Exhibition</h5>
+                                    <p class="card-text mb-1"><i class="bx bx-calendar"></i> <span data-en="2025-09-15" data-ar="2025-09-15">2025-09-15</span></p>
+                                    <span class="badge bg-success mb-2" data-en="Nature" data-ar="طبيعة">Nature</span>
+                                    <p class="card-text" data-en="Experience the beauty of various flowers." data-ar="استمتع بجمال الزهور المتنوعة."></p>
+                                    <a href="event.html?id=102" class="btn btn-warning mt-auto" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="Imgs/citadel.jfif" class="card-img-top" alt="Related Event 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title" data-en="Citadel Evenings" data-ar="أمسيات القلعة">Citadel Evenings</h5>
+                                    <p class="card-text mb-1"><i class="bx bx-calendar"></i> <span data-en="2025-09-20" data-ar="2025-09-20">2025-09-20</span></p>
+                                    <span class="badge bg-info mb-2" data-en="Culture" data-ar="ثقافة">Culture</span>
+                                    <p class="card-text" data-en="Enjoy cultural performances at the historic Citadel." data-ar="استمتع بالعروض الثقافية في القلعة التاريخية."></p>
+                                    <a href="event.html?id=103" class="btn btn-warning mt-auto" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer section-->
+        <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">2025 My Event</p>
+
+            <div class="social-link-list">
+            <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+            </div>
+
+            <p class="policy-text">
+            <a href="#" class="policy-link">Privacy Policy</a>
+            <span class="separator">.</span>
+            <a href="#" class="policy-link">Refund policy</a>
+        </div>
+        </footer>
+    </div>
+    <script src="MyEvent.js"></script>
+    <script src="nightMode.js" defer></script>    
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="auto" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="MyEvent.css">
+    <!--Linking font awesome for icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--linking Swipper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"/>
+</head>
+<body>
+    <div class="all">
+        <header class="headnav">
+            <!--Header-->
+            <div class="logo">
+                <img src="Imgs/my-logo.png" alt="Logo">
+                <h2 class="logo-name">My Event</h2>
+            </div>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Events.html">Events</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <div class="mood">
+                <button id="darkModeToggle" class="dark-toggle">🌙</button>
+                <select id="language-selectar">
+                    <option value="ar">English</option>
+                    <option value="en">العربية</option>
+                </select>
+            </div>
+        </header>
+        <section>
+            <h2 class="section-title event-section" id="event">Event</h2>
+            <div class="container py-5 mt-5">
+                <div id="event-details-section" class="card shadow-lg p-4 mb-5 bg-body-tertiary rounded">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center justify-content-center">
+                            <img id="event-detail-img" src="Imgs/channels4_profile.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                        </div>                      
+                        <div class="col-md-7" textalign="auto">
+                            <div class="card-body" textalign="right">
+                                <h1 id="event-detail-title" class="card-title display-5 text-warning mb-3" data-en="event-title" data-ar="عنوان الفعالية " dir="auto" >Chess </h1>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-calendar me-2 text-secondary"></i> <strong data-en="Date:" data-ar="التاريخ:"dir="auto">Date:</strong> <span id="event-detail-date">2025-10-20</span></p>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-location-plus me-2 text-secondary"></i> <strong data-en="Location:" data-ar="الموقع:"dir="auto">Location:</strong> <span id="event-detail-place" data-en="City Center" data-ar="مركز المدينة">دمشق _ صالة الجلاء الرياضية  </span></p>
+                                <p class="card-text mb-3 fs-5"><i class="bx bx-tag me-2 text-secondary"></i> <strong data-en="Category:" data-ar="الفئة:" dir="auto">Category:</strong> <span id="event-detail-category" class="badge bg-warning" data-en="Category" data-ar="فئة">رياضة</span></p>
+                                <p id="event-detail-longdesc" class="card-text fs-6 lead" data-en="A detailed description of the event will be displayed here, providing more information about what attendees can expect." data-ar="سيتم عرض وصف مفصل للفعالية هنا، ليقدم المزيد من المعلومات حول ما يمكن أن يتوقعه الحضور." align="right" > 
+                                  
+                                    بطولة الشطرنج في صالة الجلاء: احتفاء بالذكاء واستراتيجية العقل<br>
+
+                                في قلب العاصمة السورية دمشق، وتحديداً بين جدران صالة الجلاء الرياضية الشامخة، تحتضن رقعة الشطرنج ذات المربعات البيضاء والسوداء معركة فكرية صامتة، لكنها شديدة الإثارة. إنها بطولة الشطرنج التي يقيمها الاتحاد العربي السوري للشطرنج، والتي تمثل أكثر من مجرد منافسة رياضية عادية، فهي تحول الصالة إلى مسرح لتجسيد أعظم قيم التفكير والتخطيط والصبر.<br>
+
+                                    لوحة إستراتيجية وطنية:<br>
+
+                                لا تقتصر أهمية هذه البطولة على كونها محطة تنافسية فقط، بل هي منارة تشع بالعلم والفن والرياضة مجتمعة. برعاية الاتحاد العربي السوري للشطرنج، تتحول هذه التظاهرة إلى منصة حقيقية لاكتشاف المواهب الجديدة وصقل المهارات، حيث يتنافس لاعبون من مختلف الفئات العمرية والمستويات. إنها تأكيد على أن سورية، برغم كل التحديات، تظل أرضاً خصبة للعقول المبدعة والأفكار اللامعة.<br></p>
+                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <img id="event-detail-img" src="Imgs/boy.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                                </div>
+                                <p align="right">أجواء البطولة: صراع ذهني في هدوء <br>عندما تدخل إلى صالة الجلاء أثناء إقامة البطولة، لا يمكنك إلا أن تنبهر بمنظر اللاعبين المجتمعين حول الرقع الخشبية، وجباههم تتعرق وهم يحدقون في تحركات القطع. يسود الصالة هدوء شبه تام، ينقطع فقط بصوت نقرات الساعات الخاصة بالشطرنج، والتي تذكر الجميع بأن الوقت جزء أساسي من المعركة. هنا، لا مكان للقوة العضلية، فالسلطة الوحيدة هي للعقل، والبطولة هي لمن يملك رؤية أكثر وضوحاً وخطة أكثر متانة.<br> 
+                                </p>
+                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <img id="event-detail-img" src="Imgs/child.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                                </div>
+                                <p align="right">دور الاتحاد العربي السوري للشطرنج: راعي العقول:<br>يبرز دور الاتحاد العربي السوري للشطرنج كحجر أساس في نجاح هذه البطولات. من خلال التنظيم المحكم، وتوفير المستلزمات اللازمة، وإعداد حكام مؤهلين، يضمن الاتحاد سير المنافسات في أجواء من النزاهة والشفافية. كما أن رعايته تشجع اللاعبين وتحفزهم، وتؤكد على الاهتمام الرسمي بهذه الرياضة الفكرية التي تساهم في بناء جيل مفكر، قادر على حل المشكلات واتخاذ القرارات.<br>
+                                تأثير البطولة: بناء الإنسان وتنمية المهارات:
+                                الفوائد المتعددة للشطرنج معروفة، فهو ينمي الذاكرة، ويعلم التخطيط الاستراتيجي، ويحسن القدرة على التركيز، ويغرس قيم الصبر وتحمل المسؤولية. عندما يجتمع المئات في صالة الجلاء لممارسة هذا الفن، فإنهم لا يلعبون فقط من أجل الفوز بكأس، بل يشاركون في عملية بناء ذاتية وشخصية. هذه البطولة هي رسالة مفادها أن الاستثمار في العقل هو أعظم أنواع الاستثمار، وأن تطوير مهارات الشباب الفكرية هو الطريق الأمثل لبناء المستقبل.<br>
+                                </p>
+                                <div class="col-md-6 d-flex align-items-center justify-content-center">
+                                    <img id="event-detail-img" src="Imgs/woman.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                                </div>
+                                <p align="right">بطولة الشطرنج في صالة الجلاء، تحت مظلة الاتحاد العربي السوري للشطرنج، ليست مجرد حدث رياضي ينتهي بتتويج الفائزين. إنها احتفاء بالعقل البشري، وتأكيد على إرادة الحياة والإبداع، ودليل على أن الإبداع يتفجر حتى في أحلك الظروف. إنها تذكير بأن أعظم الانتصارات هي تلك التي تتحقق على رقعة الشطرنج، حيث تنتصر الإرادة والذكاء، لتظل سورية، كما كانت دائماً، منبعاً للعلم والعلماء، ولعبة العباقرة
+                                    <div class="col-md-6 d-flex align-items-left justify-content-left">
+                                        <img id="event-detail-img" src="Imgs/img_480.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                                    </div>
+                                </p>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                    <button class="btn btn-warning btn-lg" type="button" data-en="Register Now" data-ar="سجل الآن">Register Now</button>
+                                    <button class="btn btn-outline-secondary btn-lg" type="button" data-en="Share Event" data-ar="مشاركة الفعالية">Share Event</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                <!-- releted events   ==========================================  -->  
+                <div id="related-events-section" class="mt-5">
+                    <h2 class="section-title mb-4" data-en="Related Events" data-ar="فعاليات ذات صلة">Related Events</h2>
+                    <div class="row" id="related-events-container">
+                    
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="Imgs/flowers.jfif" class="card-img-top" alt="Related Event 1">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title" data-en="Flower Exhibition" data-ar="معرض الزهور">Flower Exhibition</h5>
+                                    <p class="card-text mb-1"><i class="bx bx-calendar"></i> <span data-en="2025-09-15" data-ar="2025-09-15">2025-09-15</span></p>
+                                    <span class="badge bg-success mb-2" data-en="Nature" data-ar="طبيعة">Nature</span>
+                                    <p class="card-text" data-en="Experience the beauty of various flowers." data-ar="استمتع بجمال الزهور المتنوعة."></p>
+                                    <a href="event.html?id=102" class="btn btn-warning mt-auto" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="Imgs/citadel.jfif" class="card-img-top" alt="Related Event 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title" data-en="Citadel Evenings" data-ar="أمسيات القلعة">Citadel Evenings</h5>
+                                    <p class="card-text mb-1"><i class="bx bx-calendar"></i> <span data-en="2025-09-20" data-ar="2025-09-20">2025-09-20</span></p>
+                                    <span class="badge bg-info mb-2" data-en="Culture" data-ar="ثقافة">Culture</span>
+                                    <p class="card-text" data-en="Enjoy cultural performances at the historic Citadel." data-ar="استمتع بالعروض الثقافية في القلعة التاريخية."></p>
+                                    <a href="event.html?id=103" class="btn btn-warning mt-auto" data-en="View Details" data-ar="عرض التفاصيل">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer section-->
+        <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">2025 My Event</p>
+
+            <div class="social-link-list">
+            <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+            </div>
+
+            <p class="policy-text">
+            <a href="#" class="policy-link">Privacy Policy</a>
+            <span class="separator">.</span>
+            <a href="#" class="policy-link">Refund policy</a>
+        </div>
+        </footer>
+    </div>
+    <script src="MyEvent.js"></script>
+    <script src="nightMode.js" defer></script>    
+</body>
+</html>
