@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali</title>
+    <link rel="stylesheet" href="MyEvent.css">
+    <!--Linking font awesome for icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--linking Swipper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="Imgs/my-logo.png" alt="logo" class="logo-img">
+                <h2 class="logo-name">My Event</h2>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                   <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                       <li class="nav-item">
+                           <a class="nav-link mx-lg-2" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link mx-lg-2" href="Events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link mx-lg-2" href="Event.html">Event</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link mx-lg-2" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link mx-lg-2" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="darkModeToggle" class="dark-toggle">🌙</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+      
+    <section>
+        <div class="ourId">
+            <span>Shahd_254099</span>
+            <span>Ali_294288</span>
+            <span>Majd_262469</span>
+            <span>Mohammad_297778</span>
+        </div>
+        <div class="Home-section">
+            <h2 class="section-title" id="home">Home</h2>
+            <div class="section1" id="week-section">
+                <h3 class="section-sub-title">Week Events</h3>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="week-list swiper-wrapper">
+                                <li class="week swiper-slide">
+                                    <img src="Imgs/damascus.jfif" alt="week-image" class="week-image">
+                                    <h3 class="name">Damascus International Fair</h3>
+                                </li>
+                                <li class="week swiper-slide">
+                                    <img src="Imgs/flowers.jfif" alt="week-image" class="week-image">
+                                    <h3 class="name">Flower Exhibition</h3>
+                                </li>
+                                <li class="week swiper-slide">
+                                    <img src="Imgs/citadel.jfif" alt="week-image" class="week-image">
+                                    <h3 class="name">Citadel Evenings</h3>
+                                </li>
+                                <li class="week swiper-slide">
+                                    <img src="Imgs/Shopping.jfif" alt="week-image" class="week-image">
+                                    <h3 class="name">Shopping Festival</h3>
+                                </li>
+                                <li class="week swiper-slide">
+                                    <img src="Imgs/Coast.jfif" alt="week-image" class="week-image">
+                                    <h3 class="name">Coast Festival</h3>
+                                </li>
+                                <li class="week swiper-slide">
+                                    <img src="Imgs/buildex.jfif" alt="week-image" class="week-image">
+                                    <h3 class="name">buildex</h3>
+                                </li>
+                                <li class="week swiper-slide">
+                                    <img src="Imgs/motor.jfif" alt="week-image" class="week-image">
+                                    <h3 class="name">motor show</h3>
+                                </li>
+                            </ul>
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section2">
+                <h3 class="mb-3 section-sub-title">Quick Categories</h3>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3 ">
+                        <div class="card category-card text-center shadow-sm">
+                            <div class="card-body">
+                                <div class="card-icon">📚</div>
+                                <h5 class="card-title mt-3">Cultural</h5>
+                                <p class="card-text">Literary events, poetry & book fairs</p>
+                                <button class="btn btn-outline-warning" onclick="showAlert('cultural')">exploration</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card category-card text-center shadow-sm">
+                            <div class="card-body">
+                                <div class="card-icon">🏛️</div>
+                                <h5 class="card-title mt-3">Historicity</h5>
+                                <p class="card-text">Archaeological exhibitions, historical lectures & museum tours</p>
+                                <button class="btn btn-outline-warning" onclick="showAlert('historicity')">exploration</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card category-card text-center shadow-sm">
+                            <div class="card-body">
+                                <div class="card-icon">🎨</div>
+                                <h5 class="card-title mt-3">Artistic</h5>
+                                <p class="card-text">Art exhibitions, theatrical performances, musical performances</p>
+                                <button class="btn btn-outline-warning" onclick="showAlert('artistic')">exploration</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card category-card text-center shadow-sm">
+                            <div class="card-body">
+                                <div class="card-icon">🔬</div>
+                                <h5 class="card-title mt-3">Scientific</h5>
+                                <p class="card-text">Conferences, workshops, technology exhibitions</p>
+                                <button class="btn btn-outline-warning" onclick="showAlert('scientific')">exploration</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section3">
+                <div class="container mb-5">
+                    <h3 class="mb-3 section-sub-title">Latest Events</h3>
+                    <div class="row" id="latest-events">
+                    <!-- js code -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer section-->
+    <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">2025 My Event</p>
+
+            <div class="social-link-list">
+            <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+            </div>
+
+            <p class="policy-text">
+            <a href="#" class="policy-link">Privacy Policy</a>
+            <span class="separator">.</span>
+            <a href="#" class="policy-link">Refund policy</a>
+        </div>
+        </footer>
+    </div>
+    <!--Linking Swiper script-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--Linking custom script-->
+    <script src="MyEvent.js"></script>
+    <script src="nightMode.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
