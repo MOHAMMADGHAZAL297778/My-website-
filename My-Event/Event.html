@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="auto" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="MyEvent.css">
+    <!--Linking font awesome for icons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--linking Swipper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="Imgs/my-logo.png" alt="logo" class="logo-img">
+                <h2 class="logo-name">My Event</h2>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                   <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                       <li class="nav-item">
+                           <a class="nav-link mx-lg-2" aria-current="page" href="Index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link mx-lg-2" href="Events.html">Events</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link mx-lg-2" href="Event.html">Event</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link mx-lg-2" href="About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link mx-lg-2" href="Contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="darkModeToggle" class="dark-toggle">🌙</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <section>
+            <h2 class="section-title event-section" id="event">Event</h2>
+            <div class="container py-5 mt-5">
+                <h1 id="event-detail-title" class="display-5 text-warning mb-3 text-center">Chess</h1>
+                <div id="event-details-section" class="card shadow-lg p-4 mb-5 bg-body-tertiary rounded">
+                    <div>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <img id="event-detail-img" src="Imgs/channels4_profile.jpg" class="w-25 img-fluid rounded-start event-detail-image " alt="Event Image">
+                            <div class="event-details-text">
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-calendar me-2 text-warning"></i> <strong>Date:</strong> <span id="event-detail-date">2025-10-10</span></p>
+                                <p class="card-text mb-2 fs-5"><i class="bx bx-location-plus me-2 text-warning"></i> <strong>Location:</strong> <span id="event-detail-place">Damascus Al-Jalaa Sports Hall</span></p>
+                                <p class="card-text mb-3 fs-5"><i class="bx bx-tag me-2 text-warning"></i> <strong>Category:</strong> <span id="event-detail-category" class="badge bg-warning">Scientific</span></p>
+                            </div>
+                        </div>                      
+                        <div textalign="auto">
+                            <div class="card-body" textalign="right">
+                                <p id="event-detail-txt1" class="card-text fs-6 lead">Chess Championship at Al-Jalaa Hall: A celebration of intelligence and mental strategy<br>
+                                In the heart of the Syrian capital, Damascus, within the walls of the imposing Al-Jalaa Sports Hall, a chessboard of black and white squares embraces a silent but highly exciting intellectual battle. It's the chess championship, hosted by the Syrian Arab Chess Federation, which represents more than just an ordinary sporting competition; it transforms the hall into a stage that embodies the greatest values ​​of thought, planning, and patience.<br>
+                                National Strategic Board:<br>
+                                The importance of this tournament is not limited to being a mere competitive platform; it is a beacon that radiates knowledge, art, and sports combined. Sponsored by the Syrian Arab Chess Federation, this event transforms into a true platform for discovering new talents and honing skills, with players of all ages and levels competing. It is confirmation that Syria, despite all challenges, remains a fertile ground for creative minds and brilliant ideas.<br></p>
+                                <div class="w-100 d-flex justify-content-around">
+                                    <img id="event-detail-img1" src="Imgs/boy.jpg" class="img-fluid rounded-start event-detail-image" alt="Event Image">
+                                </div>
+                                <p id="event-detail-txt2">Championship atmosphere: a calm mental struggle<br>
+                                When you enter the Al-Jalaa Hall during a tournament, you can't help but be amazed by the sight of the players gathered around the wooden boards, their foreheads dripping with sweat as they gaze at the movements of the pieces. The hall is almost completely quiet, broken only by the sound of chess clocks, reminding everyone that time is an essential part of the battle. Here, there is no room for brawn; the only power is the mind, and the championship belongs to the one with the clearest vision and the most solid plan.<br> 
+                                </p>
+                                <div class="w-100 d-flex justify-content-around">
+                                    <img id="event-detail-img2" src="Imgs/child.jpg" class="img-fluid rounded-start event-detail-image w-25" alt="Event Image">
+                                    <img id="event-detail-img3" src="Imgs/img_480.jpg" class="img-fluid rounded-start event-detail-image w-25 " alt="Event Image">
+                                    <img id="event-detail-img4" src="Imgs/woman.jpg" class="img-fluid rounded-start event-detail-image w-25 " alt="Event Image">
+                                </div>
+                                <p id="event-detail-txt3">The chess championship in Al-Jalaa Hall, under the umbrella of the Syrian Arab Chess Federation, is not just a sporting event that ends with the crowning of the winners. It is a celebration of the human mind, an affirmation of the will to live and innovate, and proof that creativity erupts even in the darkest of circumstances. It is a reminder that the greatest victories are those achieved on the chessboard, where will and intelligence triumph, so that Syria remains, as it has always been, a source of knowledge and scholars, and a game of geniuses.</p>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                                    <button class="btn btn-warning btn-lg" type="button">Register Now</button>
+                                    <button class="btn btn-outline-warning btn-lg" type="button">Share Event</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               
+                <!-- releted events   ==========================================  -->  
+                <div id="related-events-section" class="mt-5">
+                    <h2 class="section-title mb-4">Related Events</h2>
+                    <div class="row" id="related-events-container">
+                    
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="Imgs/flowers.jfif" class="card-img-top" alt="Related Event 1">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Flower Exhibition</h5>
+                                    <p class="card-text mb-1"><i class="bx bx-calendar"></i> <span>2025-09-15</span></p>
+                                    <span class="badge bg-success mb-2">Nature</span>
+                                    <p class="card-text">Experience the beauty of various flowers.</p>
+                                    <a href="event.html?id=102" class="btn btn-warning mt-auto">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="Imgs/citadel.jfif" class="card-img-top" alt="Related Event 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Citadel Evenings</h5>
+                                    <p class="card-text mb-1"><i class="bx bx-calendar"></i> <span>2025-09-20</span></p>
+                                    <span class="badge bg-info mb-2">Culture</span>
+                                    <p class="card-text">Enjoy cultural performances at the historic Citadel.</p>
+                                    <a href="event.html?id=103" class="btn btn-warning mt-auto">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer section-->
+        <footer class="footer-section">
+        <div class="section-content">
+            <p class="copyright-text">2025 My Event</p>
+
+            <div class="social-link-list">
+            <a href="#" class="social-link"><i class='bx bxl-facebook'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="social-link"><i class='bx bxl-twitter'></i></a>
+            </div>
+
+            <p class="policy-text">
+            <a href="#" class="policy-link">Privacy Policy</a>
+            <span class="separator">.</span>
+            <a href="#" class="policy-link">Refund policy</a>
+        </div>
+        </footer>
+    </div>
+    <script src="MyEvent.js"></script>
+    <script src="nightMode.js" defer></script>    
+</body>
+</html>
